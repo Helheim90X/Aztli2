@@ -1,0 +1,245 @@
+*{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+navbar{
+  background-color:#003B5C;
+}
+
+navbar a{
+  padding: 15px;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  margin-top: 5rem;
+  width: 100%;
+}
+
+#foot a{
+    text-decoration: none;
+    color: #00B5E2;
+}
+
+.panel {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	min-height: 5px;
+	overflow: hidden;
+}
+
+.panel_izquierdo {
+    width: 320px;
+    float: left;
+    padding-left: 100px;
+}
+
+.panel_derecho {
+    width: 320px;
+    float: right;
+    padding-right:50px;
+}
+
+#logo_buap_footer .escudo {
+    display: block;
+    height: 145px;
+    width: 130px;
+    background-image: url("../images/logo_buap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 10px;
+    padding-left: 150px;
+    margin: auto;
+}
+
+#buap-privacidad_avisos {
+  margin: 40px auto 0 auto;
+  font-weight: normal;
+  padding-left:250px;
+}
+
+#buap-privacidad_aviso a {
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    }
+
+
+
+#facultad-info a.nombre {
+  margin-top: 40px;
+}
+
+#facultad-info a {
+  font-size: 12px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+}
+
+
+.panel.centro{
+    width: 400px;
+}
+
+.ui.huge.images.inverted .image,
+.ui.huge.images.inverted img,
+.ui.huge.images.inverted svg,
+.ui.huge.image.inverted {
+  width: auto;
+  height: 800px;
+  font-size: 1.42857143rem;
+}
+
+.ui.big.images.inverted .image,
+.ui.big.images.inverted img,
+.ui.big.images.inverted svg,
+.ui.big.image.inverted {
+  width: auto;
+  height: 600px;
+  font-size: 1.28571429rem;
+}
+
+.ui.large.images.inverted .image,
+.ui.large.images.inverted img,
+.ui.large.images.inverted svg,
+.ui.large.image.inverted {
+  width: auto;
+  height: 451px;
+  font-size: 1.14285714rem;
+}
+
+.ui.mini.images.inverted .image,
+.ui.mini.images.inverted img,
+.ui.mini.images.inverted svg,
+.ui.mini.image {
+  width: auto;
+  height: 55px;
+  font-size: 0.71428571rem;
+}
+
+.ui.tiny.images.inverted .image,
+.ui.tiny.images.inverted img,
+.ui.tiny.images.inverted svg,
+.ui.tiny.image{
+  width: auto;
+  height: 80px;
+  font-size: 0.85714286rem;
+}
+
+.ui.minitiny.images.inverted .image,
+.ui.minitiny.images.inverted img,
+.ui.minitiny.images.inverted svg,
+.ui.minitiny.image {
+  width: auto;
+  height: 100px;
+  font-size: 0.89214286rem;
+}
+
+.ui.small.images .image,
+.ui.small.images img,
+.ui.small.images svg,
+.ui.small.image {
+  width: auto;
+  height: 150px;
+  font-size: 0.92857143rem;
+}
+
+.ui.medium.images .image,
+.ui.medium.images img,
+.ui.medium.images svg,
+.ui.medium.image {
+  width: auto;
+  height: 300px;
+  font-size: 1rem;
+}
+
+.azul-oscuro-buap {
+    background: #003B5C !important;
+}
+
+.azul-oscuro-buap-text {
+    color: #003B5C !important;
+}
+
+.azul-claro-buap {
+    background-color: #009ec0 !important;
+}
+
+.azul-claro-buap-texto {
+    color: #009ec0 !important;
+}
+
+.text-small {
+    font-size: 0.8em !important;
+}
+
+
+.text-medium {
+    font-size: 1.1em;
+}
+
+#inicio {
+    margin-top: 3.5em;
+    margin-bottom: 3.5em;
+    border-bottom-style: none;
+}
+#top {
+    width: 100%;
+    margin: 0em 0em;
+    border-radius: 0;
+}
+
+.circulos{
+  width: 185px;
+  height: 185px;
+  cursor: pointer;
+}
+
+#menu_desplegable .toc.item {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+
+  #menu_desplegable .item,
+  #menu_desplegable .menu {
+    display: none;
+  }
+
+  #menu_desplegable .toc.item {
+    display: block;
+  }
+
+  #menu_desplegable .header.item {
+    display: block;
+  }
+  #fenix{
+    width: 100%;
+  }
+  #minerva{
+    width: 100%;
+  }
+  #salon{
+    width: 100%;
+  }
+}
+
+/* carousel*/
+
+.carousel  a {
+	-webkit-transition: all 150ms ease;
+	-moz-transition: all 150ms ease;
+	-ms-transition: all 150ms ease;
+	-o-transition: all 150ms ease;
+	transition: all 150ms ease;
+}
+
+a:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; /* IE 8 */
+  filter: alpha(opacity=50); /* IE7 */
+  opacity: 0.6;
+  text-decoration: none;
+}

@@ -1,0 +1,39 @@
+create database disfrutandopuebla;
+
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) NOT NULL,
+  `correo` varchar(100) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `admin` tinyint(1) NOT NULL,
+  `foto_usuario` varchar(200) DEFAULT NULL,
+  PRIMARY KEY (`id_usuario`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+
+
+CREATE TABLE IF NOT EXISTS `lugar` (
+  `id_lugar` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(50) NOT NULL,
+  `ubicacion` varchar(100) NOT NULL,
+  `foto` varchar(100) NOT NULL,
+  `categoria` varchar(30) NOT NULL,
+  `sitioweb` varchar(40) DEFAULT NULL,
+  `horario_abre` time DEFAULT NULL,
+  `horario_cierra` time DEFAULT NULL,
+  PRIMARY KEY (`id_lugar`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+
+
+CREATE TABLE IF NOT EXISTS `comentario` (
+  `id_comentario` int(11) NOT NULL AUTO_INCREMENT,
+  `mensaje` varchar(200) NOT NULL,
+  `id_lugar` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL,
+  `fecha` date NOT NULL,
+  `aprobado` tinyint(4) NOT NULL,
+  `ranking` int(11) NOT NULL,
+  PRIMARY KEY (`id_comentario`),
+  KEY `id_lugar` (`id_lugar`),
+  KEY `id_usuario` (`id_usuario`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
